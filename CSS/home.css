@@ -1,0 +1,153 @@
+.navbar{
+    background-color: transparent;
+    height: 88px;
+    padding: 0.5rem;
+   
+}
+nav.navbar {
+    transition: background-color 0.3s ease;
+  }
+.navbar .navbar-brand{
+    font-weight: 500;
+    color:#dc3545;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+.login-button{
+    color: white;
+    text-decoration: none;
+    border: 1.5px solid yellow;
+    background-color: #11141d;
+    padding: 3px 10px;
+    border-radius: 10px;
+    transition: 0.3s color;
+}
+
+.login-button:hover{
+    color: black;
+    background-color: yellow;
+}
+.navbar .navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+   
+    
+}
+
+.navbar .navbar-toggler:focus, .btn-close:focus{
+    box-shadow:none;
+    outline: none;
+}
+.navbar .nav-link{
+    color: white;
+    font-weight: 800;
+    position: relative;
+}
+.navbar .nav-link:hover, .navbar .nav-link.active-page{
+    color:#e2d703;
+}
+
+@media (min-width:991px){
+    .navbar .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #dc3545;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .navbar .nav-link:hover::before, .navbar .nav-link.active-page::before {
+        width: 100%;
+        visibility: visible;
+    }
+    .login-button{
+        padding: 6px 20px;
+    }
+}
+.navbar-toggler-icon{
+    --bs-navbar-toggler-icon-bg:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+header{
+margin-bottom: 88px;
+}
+
+
+/*carousel-slider*/
+.carousel{
+   
+    display: flex;
+    justify-content: center;
+}
+
+
+.carousel-item img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    filter: brightness(50%);
+}
+/* Shows */
+.container-shows{
+    background: url(images/showing-1.png) center;
+    padding: 50px;
+}
+.container-shows .row{
+    margin-top:40px;
+}
+ .image-wrapper a{
+    text-decoration: none;
+   
+}
+.card-body h5, .card-body span{
+    color: white;
+    transition: 0.3s color;
+    font-size: 17px;
+}
+
+.card-body h5:hover{
+    color: yellow;
+}
+.card-body span{
+    font-weight: 450;
+    color: yellow;
+}
+.header-shows, .row{
+    padding: 0px 40px;
+}
+.shows-link-btn{
+    text-transform: capitalize;
+    padding: 13px 15px;
+    font-size: 15px;
+    border-radius: 15px;
+    margin-right: 15px;
+    background-color: #21232b;
+    color: white;
+    font-weight: 500;
+    border: none;
+    transition: 0.3s color;
+}
+.header-shows .last{
+    margin-right:0px;
+}
+.shows-link-btn:hover{
+    color: yellow;
+}
+.row-box a img:hover{
+    filter: brightness(130%);
+}
+.row-box a img{
+    border-radius: 10px;
+}
+.sub-title{
+    font-size: 11px;
+}
+.sub-title i, .sub-title .box-1{
+    color: yellow;
+}
