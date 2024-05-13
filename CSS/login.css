@@ -1,10 +1,4 @@
-* { 
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-    
-}
+
 svg {
     position: absolute;
     top: 0;
@@ -18,9 +12,9 @@ svg {
 }
 .main-container{  
     position: relative;
-    height: 100%;
-    width: 900px;
-    margin: 110px auto;
+ 
+    max-width: 900px;
+    margin: 80px auto;
     padding: 0px;
     border-radius: 10px;
     box-shadow: 6px 6px 10px #041240;  
@@ -36,7 +30,5 @@ svg {
     border-radius: 10px 0px 0px 10px;
     
 }
-.img-container{
-    width: fit-content;
-}
+
 
